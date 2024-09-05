@@ -4,96 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
     <title>Random Quote Machine</title>
-     <script>
-    const quotes = [
-    { quote: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis"},
-    { quote: "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.", author: "Albert Einstein"},
-    { quote: "The only limit to our realization of tomorrow is our doubts of today.", author: "Franklin D. Roosevelt"},
-    { quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill"},
-    { quote: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson"},
-    { quote: "You probably don’t exist in the future you are worried about.", author: "Brianna Wiest"},
-    { quote: "Out of suffering have emerged the strongest souls; the most massive characters are seared with scars.", author: "Kahlil Gibran"},
-    { quote: "It is not the man who has too little, but the man who craves more, that is poor.", author: "Seneca"},
-    { quote: "The best way to predict the future is to create it.", author: "Peter Drucker"},
-    { quote: "Do not wait to strike till the iron is hot; but make it hot by striking.", author: "William Butler Yeats"},
-    { quote: "Our greatest glory is not in never falling, but in rising every time we fall.", author: "Confucius"},
-    { quote: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau"},
-    { quote: "Believe you can and you're halfway there.", author: "Theodore Roosevelt"},
-    { quote: "Act as if what you do makes a difference. It does.", author: "William James"},
-    { quote: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt"},
-    { quote: "The only way to do great work is to love what you do.", author: "Steve Jobs"},
-    { quote: "If you're going through hell, keep going.", author: "Winston Churchill"},
-    { quote: "The journey of a thousand miles begins with one step.", author: "Lao Tzu"}
-  ];
-        window.onload = displayQuote;
-        function displayQuote() {
-        generateQuote()
-   }
-   
-    function generateQuote() {
-          const randomIndex = Math.floor(Math.random() * quotes.length);
-          const randomQuote = quotes[randomIndex];
-
-    document.getElementById("text").innerText = randomQuote.quote;
-
-document.getElementById('author').innerText = `- ${randomQuote.author}`;
-
-const tweetLink = document.getElementById('tweet-quote');
-        const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(randomQuote.quote)} - ${encodeURIComponent(randomQuote.author)}`;
-        tweetLink.setAttribute('href', tweetUrl);
-        tweetLink.setAttribute('target', '_blank');
-   }
-     </script>
-    <style>
-   body {
-    background-color: rgba(71, 46, 50, 1);
-    color: #fff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-
-  #quote-box {
-    background-color: #f1ebe1;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 40px;
-    border: none;
-    text-align: center;
-  }
-
-  .card-title {
-    color: #4a3435;
-    margin-bottom: 20px;
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-
-  .card-text {
-    color: #6b4f4f;
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-  }
-
-  .btn-primary {
-    background-color: #d35d6e;
-    border-color: #d35d6e;
-    color: white;
-    font-size: 1.1rem;
-    margin-right: 10px;
-  }
-
-  .btn-info {
-    background-color: #4b8ba1;
-    border-color: #4b8ba1;
-    color: white;
-    font-size: 1.1rem;
-  }
-    </style>
   </head>
   <body>
 <div class="container">
@@ -113,5 +25,6 @@ const tweetLink = document.getElementById('tweet-quote');
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(71, 46, 50, 1);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #quote-box {
+    background-color: #f1ebe1;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border: none;
+    text-align: center;
+  }
+
+  .card-title {
+    color: #4a3435;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    color: #6b4f4f;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    background-color: #d35d6e;
+    border-color: #d35d6e;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+
+  .btn-info {
+    background-color: #4b8ba1;
+    border-color: #4b8ba1;
+    color: white;
+    font-size: 1.1rem;
+  }
