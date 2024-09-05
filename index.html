@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script>
+        const quotes = [
+         { quote: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis"},
+
+         { quote: "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.", author: "Albert Einstein"},
+
+         {quote: "The only limit to our realization of tomorrow is our doubts of today.", author: "Franklin D. Roosefelt"}
+        ]
+        window.onload = displayQuote;
+        function displayQuote() {
+        generateQuote()
+   }
+   
+    function generateQuote() {
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          const randomQuote = quotes[randomIndex];
+
+    document.getElementById("text").innerText = randomQuote.quote;
+
+    document.getElementById("author").innerText = `-$ {randomQuote.author}`;
+   }
+     </script>
+    <title>Random Quote Machine</title>
+    <style>
+        * {
+            font-size: 2rem;
+        }
+    </style>
+  </head>
+  <body>
+    <wrapper id="quote-box">
+        <div id="text"></div>
+        <div id="author"></div>
+        <button id="new-quote" onClick="generateQuote();">New Quote</button>
+        <a href="#" id="tweet-quote">Tweet Quote</a>
+    </wrapper>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
